@@ -84,11 +84,12 @@ bbq_key = nil
 bbq_value = nil 
 
 holiday_hash.each do |k,v|
-  if v == "BBQ"
-    bbq_value = v 
-    bbq_key = k
-  end # if 
+v.each do |k2, v2|
+if v2.include?("BBQ")
+puts k2 
+end 
 end #do 
+end 
 bbq_key
 end
 
