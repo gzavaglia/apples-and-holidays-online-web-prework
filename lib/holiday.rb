@@ -82,15 +82,18 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 bbq_key = nil 
 bbq_value = nil 
-
+array_bbq = []
 holiday_hash.each do |k,v|
 v.each do |k2, v2|
 if v2.include?("BBQ")
-puts k2 
+#puts k2 
+bbq_key = k2
+bbq_value = v2 
+array_bbq << bbq_key
 end 
 end #do 
 end 
-bbq_key
+array_bbq
 end
 
 
