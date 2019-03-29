@@ -68,7 +68,7 @@ holiday_hash.each do |key, value|
 
 value.each do |key2, value2|
   puts "#{key.capitalize}:"
-puts "#{key2.capitalize}: #{value2.join(", ")}"
+puts "  #{key2.capitalize}: #{value2.join(", ")}"
 end 
 end
 end
